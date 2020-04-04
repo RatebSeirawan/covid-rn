@@ -1,6 +1,6 @@
 
 
-# React Native Open Source Project
+# React Native COVID-19 App
 
 This project is a [React Native](https://facebook.github.io/react-native/) project that can be used to kickstart a mobile application.
 
