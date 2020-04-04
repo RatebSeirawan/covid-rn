@@ -5,8 +5,9 @@
 This project is a [React Native](https://facebook.github.io/react-native/) project that can be used to kickstart a mobile application.
 
 **Built with Hooks**
-
 **Used The Novel Covid API https://corona.lmao.ninja/docs/**
+
+![](covidiot.gif)
 
 ## Content
 
