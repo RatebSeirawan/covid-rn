@@ -2,21 +2,23 @@ import covid from 'novelcovid';
 import {create} from 'apisauce';
 
 const api = create({
-  baseURL: 'https://corona.lmao.ninja',
+  baseURL: 'https://disease.sh',
   headers: {accept: 'application/json'},
 });
-
-const getAll = () => api.get('/all').then((result) => result.data);
+// https://corona.lmao.ninja/countries?sort=cases
+const getAll = () => api.get('/v2/all').then((result) => result.data);
 const getHopikins = () => api.get('/v2/jhucsse').then((result) => result.data);
-const getCountries = () => covid.getCountry({sort: 'cases'});
+const getCountries = () =>
+  api.get('/v2/countries?sort=cases').then((result) => result.data);
 const getByCountry = async (country) => {
-  const result = await covid.getCountry({country: country});
+  const result = await api.get('/v2/countries/' + country).then((r) => r.data);
   if (result.message) {
     throw result.message;
   }
   return result;
 };
-const getByFilter = (country) => covid.getCountry({sort: country});
+const getByFilter = (filter) =>
+  api.get('/v2/countries?sort=' + filter).then((result) => result.data);
 
 /*  Filters
     default cases
