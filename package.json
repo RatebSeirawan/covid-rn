@@ -26,7 +26,7 @@
     "@ui-kitten/components": "^4.4.1",
     "@ui-kitten/eva-icons": "^4.4.1",
     "apisauce": "^1.1.1",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "lodash": "^4.17.15",
     "novelcovid": "^1.0.7-b3",
     "parse": "^2.11.0",
