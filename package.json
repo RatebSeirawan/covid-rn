@@ -27,7 +27,7 @@
     "@ui-kitten/eva-icons": "^4.4.1",
     "apisauce": "^1.1.1",
     "axios": "^0.19.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "novelcovid": "^1.0.7-b3",
     "parse": "^2.11.0",
     "react": "16.11.0",
